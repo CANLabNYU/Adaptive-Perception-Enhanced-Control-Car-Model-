@@ -1,0 +1,39 @@
+[0.143s] Invoking command in '/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/build/ros_g29_force_feedback': /usr/bin/cmake /home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/ros-g29-force-feedback -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/install/ros_g29_force_feedback
+[0.534s] -- The C compiler identification is GNU 7.5.0
+[0.810s] -- The CXX compiler identification is GNU 7.5.0
+[0.831s] -- Check for working C compiler: /usr/bin/cc
+[1.045s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.049s] -- Detecting C compiler ABI info
+[1.281s] -- Detecting C compiler ABI info - done
+[1.304s] -- Detecting C compile features
+[1.968s] -- Detecting C compile features - done
+[1.982s] -- Check for working CXX compiler: /usr/bin/c++
+[2.221s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.222s] -- Detecting CXX compiler ABI info
+[2.467s] -- Detecting CXX compiler ABI info - done
+[2.486s] -- Detecting CXX compile features
+[3.474s] -- Detecting CXX compile features - done
+[3.493s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.591s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[3.592s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.276s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.355s] CMake Error at CMakeLists.txt:19 (find_package):
+[4.356s]   By not providing "Findrclcpp.cmake" in CMAKE_MODULE_PATH this project has
+[4.356s]   asked CMake to find a package configuration file provided by "rclcpp", but
+[4.357s]   CMake did not find one.
+[4.357s] 
+[4.358s]   Could not find a package configuration file provided by "rclcpp" with any
+[4.358s]   of the following names:
+[4.358s] 
+[4.359s]     rclcppConfig.cmake
+[4.359s]     rclcpp-config.cmake
+[4.359s] 
+[4.360s]   Add the installation prefix of "rclcpp" to CMAKE_PREFIX_PATH or set
+[4.360s]   "rclcpp_DIR" to a directory containing one of the above files.  If "rclcpp"
+[4.360s]   provides a separate development package or SDK, be sure it has been
+[4.361s]   installed.
+[4.361s] 
+[4.361s] 
+[4.361s] -- Configuring incomplete, errors occurred!
+[4.362s] See also "/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/build/ros_g29_force_feedback/CMakeFiles/CMakeOutput.log".
+[4.366s] Invoked command in '/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/build/ros_g29_force_feedback' returned '1': /usr/bin/cmake /home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/ros-g29-force-feedback -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/install/ros_g29_force_feedback

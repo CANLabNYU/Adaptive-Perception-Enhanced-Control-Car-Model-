@@ -1,0 +1,35 @@
+[0.089s] Invoking command in '/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/build/ros_g29_force_feedback': /usr/bin/cmake /home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/ros-g29-force-feedback -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/install/ros_g29_force_feedback
+[0.457s] -- The C compiler identification is GNU 7.5.0
+[0.717s] -- The CXX compiler identification is GNU 7.5.0
+[0.739s] -- Check for working C compiler: /usr/bin/cc
+[0.956s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.965s] -- Detecting C compiler ABI info
+[1.192s] -- Detecting C compiler ABI info - done
+[1.217s] -- Detecting C compile features
+[1.869s] -- Detecting C compile features - done
+[1.880s] -- Check for working CXX compiler: /usr/bin/c++
+[2.122s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.124s] -- Detecting CXX compiler ABI info
+[2.367s] -- Detecting CXX compiler ABI info - done
+[2.386s] -- Detecting CXX compile features
+[3.372s] -- Detecting CXX compile features - done
+[3.391s] CMake Error at CMakeLists.txt:18 (find_package):
+[3.392s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[3.393s]   has asked CMake to find a package configuration file provided by
+[3.393s]   "ament_cmake", but CMake did not find one.
+[3.394s] 
+[3.394s]   Could not find a package configuration file provided by "ament_cmake" with
+[3.395s]   any of the following names:
+[3.395s] 
+[3.395s]     ament_cmakeConfig.cmake
+[3.396s]     ament_cmake-config.cmake
+[3.396s] 
+[3.396s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[3.397s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[3.397s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[3.397s]   has been installed.
+[3.398s] 
+[3.398s] 
+[3.399s] -- Configuring incomplete, errors occurred!
+[3.400s] See also "/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/build/ros_g29_force_feedback/CMakeFiles/CMakeOutput.log".
+[3.404s] Invoked command in '/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/build/ros_g29_force_feedback' returned '1': /usr/bin/cmake /home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/ros-g29-force-feedback -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/install/ros_g29_force_feedback

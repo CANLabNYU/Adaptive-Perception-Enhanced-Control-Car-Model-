@@ -1,0 +1,25 @@
+[0.152s] Invoking command in '/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/build/ros_g29_force_feedback': /usr/bin/cmake /home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/ros-g29-force-feedback -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/install/ros_g29_force_feedback
+[0.260s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.359s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.360s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.087s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.167s] CMake Error at CMakeLists.txt:19 (find_package):
+[1.167s]   By not providing "Findrclcpp.cmake" in CMAKE_MODULE_PATH this project has
+[1.168s]   asked CMake to find a package configuration file provided by "rclcpp", but
+[1.168s]   CMake did not find one.
+[1.168s] 
+[1.168s]   Could not find a package configuration file provided by "rclcpp" with any
+[1.169s]   of the following names:
+[1.169s] 
+[1.169s]     rclcppConfig.cmake
+[1.170s]     rclcpp-config.cmake
+[1.170s] 
+[1.170s]   Add the installation prefix of "rclcpp" to CMAKE_PREFIX_PATH or set
+[1.170s]   "rclcpp_DIR" to a directory containing one of the above files.  If "rclcpp"
+[1.171s]   provides a separate development package or SDK, be sure it has been
+[1.171s]   installed.
+[1.172s] 
+[1.172s] 
+[1.172s] -- Configuring incomplete, errors occurred!
+[1.173s] See also "/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/build/ros_g29_force_feedback/CMakeFiles/CMakeOutput.log".
+[1.177s] Invoked command in '/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/build/ros_g29_force_feedback' returned '1': /usr/bin/cmake /home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/src/ros-g29-force-feedback -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/canlab-jetson-1/Desktop/CAR/LogitechG29/ros2_ws/install/ros_g29_force_feedback
