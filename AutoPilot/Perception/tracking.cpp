@@ -25,10 +25,17 @@ int main() {
     while (true) {
         // Wait for the next set of frames from the camera
         rs2::frameset frames = pipe.wait_for_frames();
+
         rs2::frame color_frame = frames.get_color_frame();
+	rs2::frame depth_frame = frames.get_depth_frame();
+
+	// Cast frames to video frames
+	auto vf = color_frame.as<rs2::video_frame>();
 
         // Convert RealSense frame to OpenCV matrix
-        cv::Mat frame(cv::Size(color_frame.get_width(), color_frame.get_height()), CV_8UC3, (void*)color_frame.get_data(), cv::Mat::AUTO_STEP);
+        cv::Mat frame(cv::Size(vf.get_width(), vf.get_height()), CV_8UC3, (void*)color_frame.get_data(), cv::Mat::AUTO_STEP);
+	// auto color_mat = frame_to_mat(color_frame);
+	// auto depth_mat = depth_frame_to_meters(depth_frame);
 
         // Detect objects in the frame
         std::vector<cv::Rect> boxes = detectObjects(frame);
@@ -42,8 +49,8 @@ int main() {
         // Display the frame
         cv::imshow(window_name, frame);
 
-        // Break the loop if 'q' is pressed
-        if (cv::waitKey(1) == 'q') {
+        // Break the loop
+        if (cv::waitKey(1) >= 0) {
             break;
         }
     }
