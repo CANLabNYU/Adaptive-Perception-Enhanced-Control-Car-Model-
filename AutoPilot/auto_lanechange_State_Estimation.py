@@ -278,7 +278,7 @@ def data_processing(_newData):
 		error = (newY - virtual_Y) * -1.0 / 10 # mm -> cm
 
 		standard_steering = 75 # 85
-		standard_speed = 95 # 90
+		standard_speed = 92 # 90
 		#kalman_sample_size = 20
 		kalman_sample_size = 0
 		init_sample_size = 3
