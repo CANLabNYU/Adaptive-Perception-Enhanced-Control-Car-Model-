@@ -278,7 +278,7 @@ def data_processing(_newData):
 		error = (newY - virtual_Y) * -1.0 / 10 # mm -> cm
 
 		standard_steering = 75 # 85
-		standard_speed = 90
+		standard_speed = 95 # 90
 		#kalman_sample_size = 20
 		kalman_sample_size = 0
 		init_sample_size = 3
@@ -747,6 +747,7 @@ while True:
 		# data_y
 		# AV_lane
 
+		# Current lane: 0;  Target lane: 1
 		if data_y <= virtual_Y_n_c_center + gap:
 			AV_lane = 0
 		elif data_y >= virtual_Y_n_c_center - gap:
@@ -788,9 +789,14 @@ while True:
 				continue
 				virtual_Y = virtual_Y_curr_lane
 
-		elif target_point == "2": # stop
-			print("Stop")
-			newVelocity = 80
+
+		elif target_point == "2": # stop or going back to previous lane
+			if AV_lane == 0:
+				print("Going back to previous lane")
+				virtual_Y = virtual_Y_curr_lane
+			elif AV_lane == 1:
+				print("Stop")
+				newVelocity = 80
 
 		print("Current Target: " + str(virtual_Y))
 		print("Current Lane: " + str(AV_lane))

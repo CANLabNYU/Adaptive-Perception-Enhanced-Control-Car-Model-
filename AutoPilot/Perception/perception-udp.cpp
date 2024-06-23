@@ -83,10 +83,10 @@ int main() try {
 	const float left_dist = depth.get_distance(w / 4, h / 2);
 	const float right_dist = depth.get_distance(3 * w / 4, h / 2);
 
-        if (is_object_detected(depth, 1.2, w / 2, h / 2)) {
+        if (is_object_detected(depth, 1.5, w / 2, h / 2)) {
             // Object detected, start to verify the target point
-            if (is_object_detected(depth, 1.5, w / 4, h / 2)) {
-		if (is_object_detected(depth, 1.5, 3 * w / 4, h / 2)) {
+            if (is_object_detected(depth, 1.8, w / 4, h / 2)) {
+		if (is_object_detected(depth, 1.8, 3 * w / 4, h / 2)) {
 		        send_udp_message("2"); // Stop the car immediately
 		        std::cout << "Dist: " << dist << "    Stop the Car! Stop_2 \r";
             	} else {
@@ -94,7 +94,7 @@ int main() try {
 		        std::cout << "X: -250; Y: 900;  Lane-changing_12 \r";
             	}
             } else {
-		if (is_object_detected(depth, 1.5, 3 * w / 4, h / 2)) {
+		if (is_object_detected(depth, 1.8, 3 * w / 4, h / 2)) {
 			send_udp_message("11"); // Start lane-changing, left-side empty
 		        std::cout << "Dist: " << right_dist << "    X: 250; Y: 900;  Lane-changing_11 \r";
 		} else {
