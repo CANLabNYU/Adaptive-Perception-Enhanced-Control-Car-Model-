@@ -796,6 +796,7 @@ while True:
 				virtual_Y = virtual_Y_curr_lane
 			elif AV_lane == 1:
 				print("Stop")
+				vertual_Y = virtual_Y_curr_lane
 				newVelocity = 80
 
 		print("Current Target: " + str(virtual_Y))
