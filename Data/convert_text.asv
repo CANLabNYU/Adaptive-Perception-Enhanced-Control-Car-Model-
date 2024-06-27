@@ -1,0 +1,32 @@
+clear
+
+% Initialize an empty array to store all data
+allData = [];
+
+% Loop through each text file
+for i = 1 : 10
+    % Create file name
+    filename = sprintf('CHANGE/%d/data_State_Estimation_pos.txt', i);
+
+    % Read data from text file
+    fileID = fopen(filename, 'r');
+    data = textscan(fileID, '%f');
+    fclose(fileID);
+
+    % Reshape
+    dataMatrix = reshape(data{1}, 2, 100)';
+
+    % reverse secon
+
+end
+
+% Reshape the data to create a matrix
+dataMatrix = reshape(data{1}, 2, 100)';
+
+% Convert the second col to its opposite
+dataMatrix(:, 2) = -dataMatrix(:, 2);
+
+% Write the data to Excel
+xlswrite("Data_Senario_1_pos.xlsx", dataMatrix);
+
+disp('Data has been successfully written to Data_Scenario_1_pos.xlsx');

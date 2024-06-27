@@ -2,8 +2,8 @@ close all
 
 color_code = [0.9,0.9,0.9];
 
-new_data = DataSenario1LaneChangepos;
-new_data(:, "Time") = [];
+new_data = readtable("Data_Scenario_1_pos.csv");
+% new_data(:, "Time") = [];
 
 gap = 2;
 

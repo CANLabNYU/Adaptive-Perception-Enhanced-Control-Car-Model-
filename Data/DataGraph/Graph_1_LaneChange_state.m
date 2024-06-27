@@ -2,7 +2,7 @@ close all
 
 color_code = [0.9,0.9,0.9];
 
-new_data = DataSenario1LaneChangestate;
+new_data = readtable("IROS_Data/Data_Senario_1_LaneChange_state.xlsx");
 
 x = table2array(new_data(:, "Time"));
 new_data(:, "Time") = [];
