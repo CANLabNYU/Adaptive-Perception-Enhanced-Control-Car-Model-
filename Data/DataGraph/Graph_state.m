@@ -2,10 +2,12 @@ close all
 
 color_code = [0.9,0.9,0.9];
 
-new_data = DataSenario2Stopstate;
+% new_data = readtable("Data_Scenario_1_state.csv");
+% new_data = readtable("Data_Scenario_2_state.csv");
+% new_data = readtable("Data_Scenario_3_state.csv");
+new_data = readtable("Data_Scenario_4_state.csv");
 
-x = table2array(new_data(:, "Time"));
-new_data(:, "Time") = [];
+x = 1:100;
 gap = 2;
 total_n = 2*10;
 

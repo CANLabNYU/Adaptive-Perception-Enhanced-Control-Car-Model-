@@ -2,9 +2,9 @@ close all
 
 color_code = [0.9,0.9,0.9];
 
-new_data = DataSenario1LaneChangetargetpoint;
+new_data = readtable("IROS_Data/Data_Senario_1_LaneChange_targetpoint.xlsx");
 
-x = table2array(new_data(:, "Time"));
+x = 1:100;
 new_data(:, "Time") = [];
 
 % Target Points
